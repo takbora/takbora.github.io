@@ -1,0 +1,128 @@
+
+:root {
+    --light-denim: #b2e3ef;
+    --middle-denim: #88b9c7;
+    --dark-denim: #7596a9;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+			"fejlec"
+			"tartalom"
+			"lablec";
+    grid-template-rows: max-content 1fr max-content;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--middle-denim);
+    grid-area: fejlec;
+    letter-spacing: 3px;
+}
+
+main {
+    background-color: var(--light-denim);
+    grid-area: tartalom;
+    margin: 12px;
+}
+
+footer {
+    background-color: var(--middle-denim);
+    grid-area: lablec;
+    text-align: right;
+    height: 50px;
+}
+
+ul {
+    overflow: hidden;
+    background-color: var(--dark-denim);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    display: block;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.lablec-jobb {
+    padding-right: 20px;
+}
+
+.lablec {
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.focim {
+    background-color: var(--middle-denim);
+    color: black;
+    height: 120px;
+}
+
+.menu {
+    background-color: var(--middle-denim);
+    color: black;
+    margin: 24px;
+    text-align: center;
+    display: block;
+}
+
+.oldal {
+    background-color: var(--middle-denim);
+}
+
+.aktiv-oldal {
+    background-color: black;
+    color: white;
+}
+
+.hasab-1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.hasab-2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.hasab-3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.bekezdes {
+    float: left;
+    padding: 5px;
+}
